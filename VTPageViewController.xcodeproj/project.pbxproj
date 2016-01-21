@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FBAA93491C4F43240006FA03 /* VTPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAA93481C4F43240006FA03 /* VTPageViewController.swift */; };
+		FBAA934C1C4F444D0006FA03 /* VTPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAA934B1C4F444D0006FA03 /* VTPageViewController.m */; };
 		FBBBBEE01C4E3F6E003BFC00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBBBEDF1C4E3F6E003BFC00 /* main.m */; };
 		FBBBBEE31C4E3F6E003BFC00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBBBEE21C4E3F6E003BFC00 /* AppDelegate.m */; };
 		FBBBBEE61C4E3F6E003BFC00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBBBEE51C4E3F6E003BFC00 /* ViewController.m */; };
 		FBBBBEE91C4E3F6E003BFC00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBBBEE71C4E3F6E003BFC00 /* Main.storyboard */; };
 		FBBBBEEB1C4E3F6E003BFC00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBBBBEEA1C4E3F6E003BFC00 /* Assets.xcassets */; };
 		FBBBBEEE1C4E3F6E003BFC00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBBBEEC1C4E3F6E003BFC00 /* LaunchScreen.storyboard */; };
+		FBBBBEF71C4E4081003BFC00 /* CommonAutolayoutUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBBBEF61C4E4081003BFC00 /* CommonAutolayoutUtils.m */; };
+		FBBBBEFA1C4E4157003BFC00 /* ViewControllerForScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBBBEF91C4E4157003BFC00 /* ViewControllerForScroll.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FBAA93471C4F43240006FA03 /* VTPageViewController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VTPageViewController-Bridging-Header.h"; sourceTree = "<group>"; };
+		FBAA93481C4F43240006FA03 /* VTPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTPageViewController.swift; sourceTree = "<group>"; };
+		FBAA934A1C4F444D0006FA03 /* VTPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPageViewController.h; sourceTree = "<group>"; };
+		FBAA934B1C4F444D0006FA03 /* VTPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPageViewController.m; sourceTree = "<group>"; };
 		FBBBBEDB1C4E3F6E003BFC00 /* VTPageViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VTPageViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBBBBEDF1C4E3F6E003BFC00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FBBBBEE11C4E3F6E003BFC00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +34,10 @@
 		FBBBBEEA1C4E3F6E003BFC00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBBBBEED1C4E3F6E003BFC00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBBBBEEF1C4E3F6E003BFC00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBBBBEF51C4E4081003BFC00 /* CommonAutolayoutUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonAutolayoutUtils.h; sourceTree = "<group>"; };
+		FBBBBEF61C4E4081003BFC00 /* CommonAutolayoutUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonAutolayoutUtils.m; sourceTree = "<group>"; };
+		FBBBBEF81C4E4157003BFC00 /* ViewControllerForScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerForScroll.h; sourceTree = "<group>"; };
+		FBBBBEF91C4E4157003BFC00 /* ViewControllerForScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerForScroll.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +51,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FBAA93461C4F42820006FA03 /* VTPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FBAA93481C4F43240006FA03 /* VTPageViewController.swift */,
+				FBAA93471C4F43240006FA03 /* VTPageViewController-Bridging-Header.h */,
+				FBAA934A1C4F444D0006FA03 /* VTPageViewController.h */,
+				FBAA934B1C4F444D0006FA03 /* VTPageViewController.m */,
+			);
+			path = VTPageViewController;
+			sourceTree = "<group>";
+		};
 		FBBBBED21C4E3F6E003BFC00 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +81,9 @@
 		FBBBBEDD1C4E3F6E003BFC00 /* VTPageViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FBAA93461C4F42820006FA03 /* VTPageViewController */,
+				FBBBBEF51C4E4081003BFC00 /* CommonAutolayoutUtils.h */,
+				FBBBBEF61C4E4081003BFC00 /* CommonAutolayoutUtils.m */,
 				FBBBBEE11C4E3F6E003BFC00 /* AppDelegate.h */,
 				FBBBBEE21C4E3F6E003BFC00 /* AppDelegate.m */,
 				FBBBBEE41C4E3F6E003BFC00 /* ViewController.h */,
@@ -67,6 +93,8 @@
 				FBBBBEEC1C4E3F6E003BFC00 /* LaunchScreen.storyboard */,
 				FBBBBEEF1C4E3F6E003BFC00 /* Info.plist */,
 				FBBBBEDE1C4E3F6E003BFC00 /* Supporting Files */,
+				FBBBBEF81C4E4157003BFC00 /* ViewControllerForScroll.h */,
+				FBBBBEF91C4E4157003BFC00 /* ViewControllerForScroll.m */,
 			);
 			path = VTPageViewController;
 			sourceTree = "<group>";
@@ -150,8 +178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBBBBEE61C4E3F6E003BFC00 /* ViewController.m in Sources */,
+				FBBBBEFA1C4E4157003BFC00 /* ViewControllerForScroll.m in Sources */,
 				FBBBBEE31C4E3F6E003BFC00 /* AppDelegate.m in Sources */,
+				FBAA93491C4F43240006FA03 /* VTPageViewController.swift in Sources */,
+				FBAA934C1C4F444D0006FA03 /* VTPageViewController.m in Sources */,
 				FBBBBEE01C4E3F6E003BFC00 /* main.m in Sources */,
+				FBBBBEF71C4E4081003BFC00 /* CommonAutolayoutUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +293,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = VTPageViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VienVu.VTPageViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VTPageViewController/VTPageViewController/VTPageViewController-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -272,10 +307,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = VTPageViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VienVu.VTPageViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VTPageViewController/VTPageViewController/VTPageViewController-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -298,6 +335,7 @@
 				FBBBBEF41C4E3F6E003BFC00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
