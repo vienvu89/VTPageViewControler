@@ -11,6 +11,9 @@
 @interface VTPageViewController ()<UIPageViewControllerDataSource, UIPageViewControllerDelegate, UIScrollViewDelegate>
 
 
+@property (strong, nonatomic) NSArray *pageContentControllers;
+@property (strong, nonatomic) NSArray *listTitleButton;
+
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 @property (strong, nonatomic) UIView *viewContainerButton;
 @property (strong, nonatomic) NSMutableArray *listButton;
@@ -27,12 +30,33 @@
 @property (assign, nonatomic) BOOL isGotoRighPlace;
 
 
+
+
 @end
 
 @implementation VTPageViewController
 
-- (void)viewDidLoad {
+
+- (instancetype)initWithControllers:(NSArray *)controllers titleEachController:(NSArray *)titles {
+    VTPageViewController *controller = [[VTPageViewController alloc] init];
+    controller.listTitleButton = titles;
+    controller.pageContentControllers = controllers;
+    controller.heightSegment = 50;
+    controller.isHaveSeperateIndicator = NO;
+    controller.heightIndicator = 5;
+    controller.colorBackgroundSegment = [UIColor lightGrayColor];
+    controller.colorBackgroundIndicator = [UIColor blueColor];
+    controller.colorBackgroundContainerIndicator = [UIColor lightGrayColor];
+    controller.colorTitleDefault = [UIColor greenColor];
     
+    controller.heightCustomView = 50;
+    
+//    controller.color
+    
+    return controller;
+}
+
+- (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
@@ -41,7 +65,7 @@
     [self setupIndicator];
     [self setupSeperate];
     [self setupPageViewController];
-    [self.view setBackgroundColor:[UIColor blueColor]];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
     
 }
 
@@ -57,6 +81,9 @@
 - (void)setupButtonSegment {
     
     self.viewContainerButton  = [[UIView alloc] init];
+    
+    self.viewContainerButton.backgroundColor = self.colorBackgroundSegment;
+    
     [self.view addSubview:self.viewContainerButton];
     NSDictionary *views =@{@"childView": self.viewContainerButton, @"container": self.view};
     self.viewContainerButton.translatesAutoresizingMaskIntoConstraints = NO;
@@ -73,10 +100,9 @@
                                     toItem:nil
                                  attribute:NSLayoutAttributeNotAnAttribute
                                 multiplier:1.0
-                                  constant:self.heightButton]];
+                                  constant:self.heightSegment]];
     
     [self.view addConstraints:verticalConstraints];
-    [self.viewContainerButton setBackgroundColor:[UIColor redColor]];
     
     for (int i = 0; i < self.listTitleButton.count; i++) {
         UIButton *button = [[UIButton alloc] init];
@@ -88,12 +114,16 @@
             self.colorTitleSegmentSelexted = self.colorBackgroundIndicator;
         }
         
+       
+        
         [button addTarget:self action:@selector(buttonAtIndexIsSelected:) forControlEvents:UIControlEventTouchUpInside];
         button.tag = i;
         
         [button setTitleColor:self.colorTitleSegmentSelexted forState:UIControlStateSelected];
+        [button setTitleColor:self.colorTitleDefault forState:UIControlStateNormal];
         
         [button setTitle:[self.listTitleButton objectAtIndex:i]  forState:UIControlStateNormal];
+        button.showsTouchWhenHighlighted = NO;
         
         NSDictionary *views =@{@"childView": button, @"container": self.viewContainerButton};
         NSArray *horizontalConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[childView]|" options:0 metrics:nil views:views];
@@ -127,7 +157,7 @@
     
     [self.viewContainerIndicator addConstraint:[NSLayoutConstraint constraintWithItem:self.viewContainerIndicator attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:self.heightIndicator]];
     
-    self.viewContainerIndicator.backgroundColor = [UIColor purpleColor];
+    self.viewContainerIndicator.backgroundColor = self.colorBackgroundContainerIndicator;
     
 
     self.viewIndicator = [[UIView alloc] init];
@@ -148,6 +178,9 @@
 
 
 - (void)setupSeperate {
+    if (!self.isHaveSeperateIndicator) {
+        return;
+    }
     self.viewseperate = [[UIView alloc] init];
     self.viewseperate.translatesAutoresizingMaskIntoConstraints = NO;
     [self.viewContainerIndicator addSubview:self.viewseperate];
@@ -185,7 +218,7 @@
     
     [self.view addConstraints:verticalConstraints];
     
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.pageViewController.view attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.viewIndicator attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.pageViewController.view attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.viewContainerIndicator attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
 
     [self.pageViewController didMoveToParentViewController:self];
     

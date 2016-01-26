@@ -10,11 +10,71 @@
 
 @interface VTPageViewController : UIViewController
 
-@property (strong, nonatomic) NSArray *pageContentControllers;
-@property (assign, nonatomic) CGFloat heightButton;
+/**
+ *  Init
+ *
+ *  @param controllers List Controller
+ *  @param titles      List title show to segment for each controller above
+ *
+ *  @return instance of Controller. Default background color of view is White;
+ */
+- (instancetype)initWithControllers:(NSArray *)controllers titleEachController:(NSArray *)titles;
+
+/**
+ *  Define height of Segment. Default Value is 50
+ */
+@property (assign, nonatomic) CGFloat heightSegment;
+
+
+/**
+ *  Define color of background Segment. Default is LightGray
+ */
+@property (strong, nonatomic) UIColor *colorBackgroundSegment;
+
+
+/**
+ *  Define height of indicator run below segment. Defaul is 5
+ */
 @property (assign, nonatomic) CGFloat heightIndicator;
-@property (strong, nonatomic) NSArray *listTitleButton;
+
+
+/**
+ *  color for background indicator. Default is LightGray
+ */
 @property (strong, nonatomic) UIColor *colorBackgroundIndicator;
+
+
+/**
+ *  color for background container indicator. Default is LightGray
+ */
+@property (strong, nonatomic) UIColor *colorBackgroundContainerIndicator;
+
+
+/**
+ *  Default color of title semeent when don't select. Default is Green.
+ */
+@property (strong, nonatomic) UIColor *colorTitleDefault;
+
+
+/**
+ * Color of title segment when selected. Deafult is same with colorBackgroundIndicator.
+ */
 @property (strong, nonatomic) UIColor *colorTitleSegmentSelexted;
+
+/**
+ *  Define value have separate line bottom of indicator. Default is NO
+ */
+@property (assign, nonatomic) BOOL isHaveSeperateIndicator;
+
+/**
+ *  Allow user add custom View below segment. Default is nil
+ */
+@property (strong, nonatomic) UIView *customViewBelowSegment;
+
+/**
+ *  Define height for custom View. Default is 50 if customView added.
+ */
+@property (assign, nonatomic) CGFloat heightCustomView;
+
 
 @end
