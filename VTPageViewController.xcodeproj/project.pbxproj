@@ -17,6 +17,7 @@
 		FBBBBEF71C4E4081003BFC00 /* CommonAutolayoutUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBBBEF61C4E4081003BFC00 /* CommonAutolayoutUtils.m */; };
 		FBBBBEFA1C4E4157003BFC00 /* ViewControllerForScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBBBEF91C4E4157003BFC00 /* ViewControllerForScroll.m */; };
 		FBE6649A1C7433600032D5CA /* VTPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE664991C7433600032D5CA /* VTPageViewController.swift */; };
+		FBF7186A1C747F0A0047B333 /* Futura-CondensedMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBF718691C747F0A0047B333 /* Futura-CondensedMedium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FBBBBEF91C4E4157003BFC00 /* ViewControllerForScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerForScroll.m; sourceTree = "<group>"; };
 		FBE664981C7433600032D5CA /* VTPageViewController-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VTPageViewController-Bridging-Header.h"; sourceTree = "<group>"; };
 		FBE664991C7433600032D5CA /* VTPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTPageViewController.swift; sourceTree = "<group>"; };
+		FBF718691C747F0A0047B333 /* Futura-CondensedMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura-CondensedMedium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				FBBBBEEA1C4E3F6E003BFC00 /* Assets.xcassets */,
 				FBBBBEEC1C4E3F6E003BFC00 /* LaunchScreen.storyboard */,
 				FBBBBEEF1C4E3F6E003BFC00 /* Info.plist */,
+				FBF718691C747F0A0047B333 /* Futura-CondensedMedium.ttf */,
 				FBBBBEDE1C4E3F6E003BFC00 /* Supporting Files */,
 				FBBBBEF81C4E4157003BFC00 /* ViewControllerForScroll.h */,
 				FBBBBEF91C4E4157003BFC00 /* ViewControllerForScroll.m */,
@@ -166,6 +169,7 @@
 			files = (
 				FBBBBEEE1C4E3F6E003BFC00 /* LaunchScreen.storyboard in Resources */,
 				FBBBBEEB1C4E3F6E003BFC00 /* Assets.xcassets in Resources */,
+				FBF7186A1C747F0A0047B333 /* Futura-CondensedMedium.ttf in Resources */,
 				FBBBBEE91C4E3F6E003BFC00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

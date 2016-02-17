@@ -115,15 +115,18 @@
             self.colorTitleSegmentSelexted = self.colorBackgroundIndicator;
         }
         
-       
-    
         
         [button addTarget:self action:@selector(buttonAtIndexIsSelected:) forControlEvents:UIControlEventTouchUpInside];
         button.tag = i;
         
         [button setTitleColor:self.colorTitleSegmentSelexted forState:UIControlStateSelected];
         [button setTitleColor:self.colorTitleDefault forState:UIControlStateNormal];
-        button.titleLabel.font = [UIFont systemFontOfSize:self.fontSizeTitle];
+        if (self.fontTitle) {
+            button.titleLabel.font = [self.fontTitle fontWithSize:self.fontSizeTitle];
+        } else {
+            button.titleLabel.font = [UIFont systemFontOfSize:self.fontSizeTitle];
+        }
+        
         
         [button setTitle:[self.listTitleButton objectAtIndex:i]  forState:UIControlStateNormal];
         button.showsTouchWhenHighlighted = NO;

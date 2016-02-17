@@ -36,8 +36,6 @@
 
 
 - (void)setupPageViewController  {
-   
-    
     ViewControllerForScroll *controller1 = [[ViewControllerForScroll alloc] init];
     controller1.view.backgroundColor = [UIColor orangeColor];
     ViewControllerForScroll *controller2 = [[ViewControllerForScroll alloc] init];
@@ -49,16 +47,14 @@
     controller4.view.backgroundColor = [UIColor grayColor];
     
     self.controller = [[VTPageViewController alloc] initWithControllers:@[controller1, controller2, controller3, controller4] titleEachController:@[@"abc", @"def", @"zxc", @"cvnbn"]];
-
-    [CommonAutolayoutUtils addConstraintsChildToContainer:self.viewContainerPageViewController childView:_controller.view];
-    [_controller didMoveToParentViewController:self];
-    
-    
     _controller.colorBackgroundIndicator = [UIColor yellowColor];
     _controller.heightSegment  = 50;
     _controller.heightIndicator = 5;
- 
-    
+    _controller.fontTitle = [UIFont fontWithName:@"Futura-CondensedMedium" size:15];
+    _controller.fontSizeTitle = 13;
+
+    [CommonAutolayoutUtils addConstraintsChildToContainer:self.viewContainerPageViewController childView:_controller.view];
+    [_controller didMoveToParentViewController:self];
 }
 
 

@@ -49,6 +49,11 @@
  */
 @property (strong, nonatomic) UIColor *colorBackgroundContainerIndicator;
 
+/**
+ *  Font for title on segment
+ */
+@property (strong, nonatomic) UIFont *fontTitle;
+
 
 /**
  *  Default color of title segment. Default is Green.
