@@ -298,7 +298,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VienVu.VTPageViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "VTPageViewController/VTPageViewController/VTPageViewController-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "VTPageViewController/VTPageViewController-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -312,7 +312,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VienVu.VTPageViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "VTPageViewController/VTPageViewController/VTPageViewController-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "VTPageViewController/VTPageViewController-Bridging-Header.h";
 			};
 			name = Release;
 		};

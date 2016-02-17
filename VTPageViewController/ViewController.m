@@ -36,11 +36,7 @@
 
 
 - (void)setupPageViewController  {
-    self.controller = [[VTPageViewController alloc] init];
-    _controller.colorBackgroundIndicator = [UIColor yellowColor];
-    _controller.heightButton  = 50;
-    _controller.heightIndicator = 5;
-    _controller.listTitleButton = @[@"abc", @"def", @"zxc", @"cvnbn"];
+   
     
     ViewControllerForScroll *controller1 = [[ViewControllerForScroll alloc] init];
     controller1.view.backgroundColor = [UIColor orangeColor];
@@ -52,10 +48,16 @@
     ViewControllerForScroll *controller4 = [[ViewControllerForScroll alloc] init];
     controller4.view.backgroundColor = [UIColor grayColor];
     
-    _controller.pageContentControllers  = @[controller1, controller2, controller3, controller4];
+    self.controller = [[VTPageViewController alloc] initWithControllers:@[controller1, controller2, controller3, controller4] titleEachController:@[@"abc", @"def", @"zxc", @"cvnbn"]];
 
     [CommonAutolayoutUtils addConstraintsChildToContainer:self.viewContainerPageViewController childView:_controller.view];
     [_controller didMoveToParentViewController:self];
+    
+    
+    _controller.colorBackgroundIndicator = [UIColor yellowColor];
+    _controller.heightSegment  = 50;
+    _controller.heightIndicator = 5;
+ 
     
 }
 
