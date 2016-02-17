@@ -48,6 +48,7 @@
     controller.colorBackgroundIndicator = [UIColor blueColor];
     controller.colorBackgroundContainerIndicator = [UIColor lightGrayColor];
     controller.colorTitleDefault = [UIColor greenColor];
+    controller.fontSizeTitle = 15;
     
     controller.heightCustomView = 50;
     
@@ -115,12 +116,14 @@
         }
         
        
+    
         
         [button addTarget:self action:@selector(buttonAtIndexIsSelected:) forControlEvents:UIControlEventTouchUpInside];
         button.tag = i;
         
         [button setTitleColor:self.colorTitleSegmentSelexted forState:UIControlStateSelected];
         [button setTitleColor:self.colorTitleDefault forState:UIControlStateNormal];
+        button.titleLabel.font = [UIFont systemFontOfSize:self.fontSizeTitle];
         
         [button setTitle:[self.listTitleButton objectAtIndex:i]  forState:UIControlStateNormal];
         button.showsTouchWhenHighlighted = NO;

@@ -51,9 +51,14 @@
 
 
 /**
- *  Default color of title semeent when don't select. Default is Green.
+ *  Default color of title segment. Default is Green.
  */
 @property (strong, nonatomic) UIColor *colorTitleDefault;
+
+/**
+ *  Font size for Title. Default font size is 15
+ */
+@property (assign, nonatomic) CGFloat fontSizeTitle;
 
 
 /**
