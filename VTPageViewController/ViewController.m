@@ -46,7 +46,7 @@
     ViewControllerForScroll *controller4 = [[ViewControllerForScroll alloc] init];
     controller4.view.backgroundColor = [UIColor grayColor];
     
-    self.controller = [[VTPageViewController alloc] initWithControllers:@[controller1, controller2, controller3, controller4] titleEachController:@[@"abc", @"def", @"zxc", @"cvnbn"]];
+    self.controller = [[VTPageViewController alloc] initWithControllers:@[controller1, controller2, controller3, controller4] titleEachController:@[@"Tab1", @"Tab2", @"Tab3", @"Tab4"]];
     _controller.colorBackgroundIndicator = [UIColor yellowColor];
     _controller.heightSegment  = 50;
     _controller.heightIndicator = 5;
