@@ -1,7 +1,7 @@
 # VTPageViewControler
 =============
 
-A simple pageViewcontroller have same behavior with Instagrame notification tab.
+A simple pageViewcontroller have same behavior like Instagrame notification tab.
 
 
 ![Alt text](https://i.gyazo.com/58fec8fee99b97c5bb55419ba99c24ad.gif "Demo")
