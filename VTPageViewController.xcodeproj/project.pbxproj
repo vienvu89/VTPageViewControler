@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FBAA93491C4F43240006FA03 /* VTPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAA93481C4F43240006FA03 /* VTPageViewController.swift */; };
 		FBAA934C1C4F444D0006FA03 /* VTPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAA934B1C4F444D0006FA03 /* VTPageViewController.m */; };
 		FBBBBEE01C4E3F6E003BFC00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBBBEDF1C4E3F6E003BFC00 /* main.m */; };
 		FBBBBEE31C4E3F6E003BFC00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBBBEE21C4E3F6E003BFC00 /* AppDelegate.m */; };
@@ -20,8 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FBAA93471C4F43240006FA03 /* VTPageViewController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VTPageViewController-Bridging-Header.h"; sourceTree = "<group>"; };
-		FBAA93481C4F43240006FA03 /* VTPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTPageViewController.swift; sourceTree = "<group>"; };
 		FBAA934A1C4F444D0006FA03 /* VTPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPageViewController.h; sourceTree = "<group>"; };
 		FBAA934B1C4F444D0006FA03 /* VTPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPageViewController.m; sourceTree = "<group>"; };
 		FBBBBEDB1C4E3F6E003BFC00 /* VTPageViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VTPageViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,8 +51,6 @@
 		FBAA93461C4F42820006FA03 /* VTPageViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FBAA93481C4F43240006FA03 /* VTPageViewController.swift */,
-				FBAA93471C4F43240006FA03 /* VTPageViewController-Bridging-Header.h */,
 				FBAA934A1C4F444D0006FA03 /* VTPageViewController.h */,
 				FBAA934B1C4F444D0006FA03 /* VTPageViewController.m */,
 			);
@@ -180,7 +175,6 @@
 				FBBBBEE61C4E3F6E003BFC00 /* ViewController.m in Sources */,
 				FBBBBEFA1C4E4157003BFC00 /* ViewControllerForScroll.m in Sources */,
 				FBBBBEE31C4E3F6E003BFC00 /* AppDelegate.m in Sources */,
-				FBAA93491C4F43240006FA03 /* VTPageViewController.swift in Sources */,
 				FBAA934C1C4F444D0006FA03 /* VTPageViewController.m in Sources */,
 				FBBBBEE01C4E3F6E003BFC00 /* main.m in Sources */,
 				FBBBBEF71C4E4081003BFC00 /* CommonAutolayoutUtils.m in Sources */,
