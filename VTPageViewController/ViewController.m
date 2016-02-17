@@ -26,7 +26,7 @@
   
     [self setupPageViewController];
     
-    
+    self.navigationItem.title = @"Demo";
 }
 
 - (void)didReceiveMemoryWarning {

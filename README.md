@@ -4,10 +4,17 @@
 A simple pageViewcontroller have same behavior with Instagrame notification tab.
 
 
-![Alt text](https://i.gyazo.com/5c1c3b0fbe9a4a4e79650ab3a88e2e76.gif "Demo")
+![Alt text](https://i.gyazo.com/58fec8fee99b97c5bb55419ba99c24ad.gif "Demo")
 
 Usage
 ==============
+
+Clone project and drag two files:
+
+    VTPageViewController.h
+    VTPageViewController.m 
+
+to your project.
 
 
 ```objc
@@ -36,6 +43,8 @@ _controller.fontSizeTitle = 13;
 [_controller didMoveToParentViewController:self];
 
 ```
+
+More attribute for custom see int VTPageViewController.h file.
 
 ## Licence
 
