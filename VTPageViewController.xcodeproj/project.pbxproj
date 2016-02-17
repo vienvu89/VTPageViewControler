@@ -16,6 +16,7 @@
 		FBBBBEEE1C4E3F6E003BFC00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBBBEEC1C4E3F6E003BFC00 /* LaunchScreen.storyboard */; };
 		FBBBBEF71C4E4081003BFC00 /* CommonAutolayoutUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBBBEF61C4E4081003BFC00 /* CommonAutolayoutUtils.m */; };
 		FBBBBEFA1C4E4157003BFC00 /* ViewControllerForScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBBBEF91C4E4157003BFC00 /* ViewControllerForScroll.m */; };
+		FBE6649A1C7433600032D5CA /* VTPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE664991C7433600032D5CA /* VTPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		FBBBBEF61C4E4081003BFC00 /* CommonAutolayoutUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonAutolayoutUtils.m; sourceTree = "<group>"; };
 		FBBBBEF81C4E4157003BFC00 /* ViewControllerForScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerForScroll.h; sourceTree = "<group>"; };
 		FBBBBEF91C4E4157003BFC00 /* ViewControllerForScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerForScroll.m; sourceTree = "<group>"; };
+		FBE664981C7433600032D5CA /* VTPageViewController-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VTPageViewController-Bridging-Header.h"; sourceTree = "<group>"; };
+		FBE664991C7433600032D5CA /* VTPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				FBBBBEDE1C4E3F6E003BFC00 /* Supporting Files */,
 				FBBBBEF81C4E4157003BFC00 /* ViewControllerForScroll.h */,
 				FBBBBEF91C4E4157003BFC00 /* ViewControllerForScroll.m */,
+				FBE664981C7433600032D5CA /* VTPageViewController-Bridging-Header.h */,
+				FBE664991C7433600032D5CA /* VTPageViewController.swift */,
 			);
 			path = VTPageViewController;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 				FBBBBEFA1C4E4157003BFC00 /* ViewControllerForScroll.m in Sources */,
 				FBBBBEE31C4E3F6E003BFC00 /* AppDelegate.m in Sources */,
 				FBAA934C1C4F444D0006FA03 /* VTPageViewController.m in Sources */,
+				FBE6649A1C7433600032D5CA /* VTPageViewController.swift in Sources */,
 				FBBBBEE01C4E3F6E003BFC00 /* main.m in Sources */,
 				FBBBBEF71C4E4081003BFC00 /* CommonAutolayoutUtils.m in Sources */,
 			);
