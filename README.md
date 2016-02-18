@@ -29,7 +29,7 @@ to your project.
 
 self.controller = [[VTPageViewController alloc] initWithControllers:ListController titleEachController:List Title];
 
-//Cusomize for attirubte you want
+//Cusomize for attribute you want
 
 _controller.colorBackgroundIndicator = [UIColor yellowColor];
 _controller.heightSegment  = 50;
