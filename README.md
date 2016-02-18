@@ -44,7 +44,7 @@ _controller.fontSizeTitle = 13;
 
 ```
 
-More attribute for custom see int VTPageViewController.h file.
+More attributes for custom see in VTPageViewController.h file.
 
 ## Licence
 
