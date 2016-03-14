@@ -29,7 +29,7 @@
 @property (assign, nonatomic) BOOL isManuallSegmentSelect;
 @property (assign, nonatomic) BOOL isGotoRighPlace;
 
-
+@property (assign, nonatomic) BOOL userDraggingStartedTransitionInProgress;
 
 
 @end
@@ -242,6 +242,10 @@
         return;
     }
     
+    if (self.userDraggingStartedTransitionInProgress) {
+        return;
+    }
+    
     __unsafe_unretained typeof(self) weakSelf = self;
     UIViewController *controller = [self.pageContentControllers objectAtIndex:sender.tag];
     
@@ -315,6 +319,10 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
+    if (scrollView.isTracking || scrollView.isDecelerating) {
+        self.userDraggingStartedTransitionInProgress = YES;
+    }
+    
     CGPoint point = scrollView.contentOffset;
     
     float percentComplete;
@@ -324,8 +332,9 @@
         
         if (percentComplete == 1.0) {
             self.isGotoRighPlace = YES;
+            self.constraintLeadingIndicator.constant = self.view.frame.size.width / self.pageContentControllers.count * self.nextIndexController;
         }
-        
+    
         if (!self.isGotoRighPlace) {
             NSInteger changeIndex;
             if (self.nextIndexController > self.currentIndexController) {
@@ -359,6 +368,10 @@
             }
         }
     }
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    self.userDraggingStartedTransitionInProgress = NO;
 }
 
 #pragma mark - Utility
