@@ -1,3 +1,9 @@
 language: objective-c
 
-script: xctool -sdk iphonesimulator -project VTPageViewController.xcodeproj -scheme VTPageViewController build test
+xcode_project: VTPageViewController.xcodeproj
+xcode_scheme : VTPageViewController
+
+notifications:
+  email: false
+
+script: xctool -project VTPageViewController.xcodeproj -scheme VTPageViewController build  CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
