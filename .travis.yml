@@ -1,4 +1,3 @@
 language: objective-c
 
-xcode_project: VTPageViewController.xcodeproj
-xcode_scheme:  VTPageViewController
+script: xctool -sdk iphonesimulator -project VTPageViewController.xcodeproj -scheme VTPageViewController build test
