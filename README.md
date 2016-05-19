@@ -1,12 +1,9 @@
 # VTPageViewControler
 =============
 
-A simple pageViewcontroller has same behavior like Instagram notification tab.
-
-
-Welcome
 [![Build Status](https://travis-ci.org/vienvu89/VTPageViewControler.svg?branch=master)](https://travis-ci.org/vienvu89/VTPageViewControler)
 
+A simple pageViewcontroller has same behavior like Instagram notification tab.
 
 ![Alt text](https://i.gyazo.com/58fec8fee99b97c5bb55419ba99c24ad.gif "Demo")
 
