@@ -141,6 +141,7 @@
 				TargetAttributes = {
 					FBBBBEDA1C4E3F6E003BFC00 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = EVEWM7299Q;
 					};
 				};
 			};
@@ -298,9 +299,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = VTPageViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = VienVu.VTPageViewController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vienvu.VTPageViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "VTPageViewController/VTPageViewController-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -312,9 +314,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = VTPageViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = VienVu.VTPageViewController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vienvu.VTPageViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "VTPageViewController/VTPageViewController-Bridging-Header.h";
 			};
