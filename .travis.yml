@@ -1,4 +1,4 @@
 language: objective-c
 
-xcode_project: VTPageViewController.xcodeproj # path to your xcodeproj folder
-xcode_scheme: VTPageViewController
+xcode_project: VTPageViewController.xcodeproj
+xcode_scheme:  VTPageViewController
